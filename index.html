@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gungun Verma | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .bubble-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.886);
+      animation: floatUp linear infinite;
+      bottom: -100px;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.2;
+      }
+
+      50% {
+        opacity: 0.4;
+      }
+
+      90% {
+        opacity: 0.2;
+      }
+
+      100% {
+        transform: translateY(-120vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+  <div class="bubble-background" id="bubbles"></div>
+
+  <nav id="navbar" class="three-d">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      
+       
+    </ul>
+  </nav>
+
+  <header class="hero contact-card">
+    <div class="overlay">
+      <h1 class="hero-title highlight-text">Hi, I am <span id="typed-text"></span><span class="cursor">|</span></h1>
+      <p class="hero-subtitle animated-text">Poetess | AI Developer | CSE Student</p>
+      <a href="#contact" class="btn three-d">Let's Connect</a>
+    </div>
+  </header>
+
+
+  <section id="about" class="section fade-in enhanced-section">
+    <h2 class="highlight-text">About Me</h2>
+    <p class="animated-text">I am a passionate Computer Science student who loves combining technology and art. With
+      hands-on experience in AI, published poetry, and a flair for event management and public speaking, I strive to
+      innovate and express creatively.</p>
+  </section>
+
+  <section id="projects" class="section fade-in enhanced-section">
+    <h2 class="highlight-text">Projects</h2>
+    <div class="cards">
+      <div class="card three-d">
+        <h3>AI Travel Planner</h3>
+        <p>AI-based system for personalized itineraries, presented at International conference 2025.</p>
+      </div>
+      <div class="card three-d">
+        <h3>Object Detection</h3>
+        <p>Developed using OpenCV and Python, won Best Project Award at Techlon 2025.</p>
+      </div>
+      <div class="card three-d">
+        <h3>Sentiment Analysis Tool</h3>
+        <p>A web-based tool for analyzing text sentiment using natural language processing.</p>
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in enhanced-section">
+    <h2 class="highlight-text">Technical Skills</h2>
+    <div class="cards">
+      <div class="card three-d">
+        <h3 class="animated-text">Frontend Development</h3>
+        <p>Building responsive and engaging web experiences using HTML, CSS, and JavaScript frameworks.</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">HTML5</h3>
+        <p>Semantic structure, accessibility-first markup, SEO-friendly layouts, and clean code practices.</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">CSS3</h3>
+        <p>Advanced styling with Flexbox, Grid, responsive layouts, animations, and gradient effects.</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">JavaScript (ES6+)</h3>
+        <p>Dynamic interactivity, DOM manipulation, event-driven behavior, and project-based scripting.</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">Python</h3>
+        <p>Data analysis, machine learning, web scraping, and automation scripting.</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">Machine Learning</h3>
+        <p>Experience with scikit-learn, TensorFlow, and PyTorch for building predictive models.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section fade-in enhanced-section">
+    <h2 class="highlight-text">Education</h2>
+    <div class="cards">
+      <div class="card three-d">
+        <h3 class="animated-text">B.Tech - Computer Science Engineering</h3>
+        <p>Echelon Institute of Technology<br />CGPA: 8.04 (current CGPA)</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">Senior Secondary (12th)</h3>
+        <p>Sr. Shree Ram Model High School<br />Percentage: 88%</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">Secondary (10th)</h3>
+        <p>Sr. Shree Ram Model High School<br />Percentage: 85.6%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section fade-in enhanced-section">
+    <h2 class="highlight-text">Achievements</h2>
+    <div class="cards">
+      <div class="card three-d">
+        <h3 class="animated-text">Published Poetess</h3>
+        <p>Blue Publications</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">Best Project Award</h3>
+        <p>Techlon 2025</p>
+      </div>
+      <div class="card three-d">
+        <h3 class="animated-text">Grand Poetry Show Performer</h3>
+        <p>TalkWithFeel Platform</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in enhanced-section">
+    <h2 class="highlight-text">Contact Me</h2>
+    <div class="contact-card">
+      <h3 class="animated-text">Let's Talk</h3>
+      <p>Have a question or want to work together? I'd love to hear from you!</p>
+      <form action="mailto:gungunverma9310@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required  aria-label="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" required  aria-label="Your Email" />
+        <textarea id="messageInput" name="message" placeholder="Your Message" rows="5" required 
+          aria-label="Your Message"></textarea>
+        <button type="submit" class="btn three-d">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-details">
+      <ul>
+        <li><strong>📧 Email:</strong> <a href="mailto:gungunverma9310@gmail.com">gungunverma9310@gmail.com</a></li>
+        <li><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/gungun-verma-5a0b84299/?originalSubdomain=in" target="_blank"
+            rel="noopener noreferrer">linkedin.com/in/gungunverma</a></li>
+        <li><strong>💻 GitHub:</strong> <a href="https://github.com/Gungunverma1227" target="_blank"
+            rel="noopener noreferrer">github.com/gungunverma</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer >
+    <button id="backToTop" aria-label="Back to top">⬆ Back to Top</button>
+    <p>© 2025 Gungun Verma. Made with ❤️ and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
